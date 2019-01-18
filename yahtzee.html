@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YAHTZEE!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/yahtzee.css">
+</head>  
+<div class="text-center" id="yahtzee">YAHTZEE</div>
+<body>
+
+<div id="fireworks">    
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+
+<h1 class='text-center'>YAHTZEE!</h1>
+
+<div class="container">
+    <div class="row text-center">        
+        <div class="col"><div class="dice not-selected"></div></div>
+        <div class="col"><div class="dice not-selected"></div></div>
+        <div class="col"><div class="dice not-selected"></div></div>
+        <div class="col"><div class="dice not-selected"></div></div>
+        <div class="col"><div class="dice not-selected"></div></div>        
+    </div>
+</div>
+
+<div class="text-center"> 
+    <button class="btn btn-lg btn-primary" id="roll-button">Roll Dice</button>
+</div>
+
+<div class="container">
+
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th>Upper Section</th>
+                <th>How to Score</th>
+                <th class="width-15">Game #1</th>
+                <th class="width-15">Game #2</th>
+                <th class="width-15">Game #3</th>
+            </tr>
+            <tr> 
+                <th> 
+                    <div>
+                        <div>Aces &#x2680;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Aces</th>
+                <td class="width-15"><input></td>
+                <td class="width-15"><input></td>
+                <td class="width-15"><input></td>
+            </tr>
+            <tr> 
+                <th> 
+                    <div> 
+                        <div>Twos &#x2681;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Twoes</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Threes &#x2682;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Threes</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Fours &#x2683;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Fours</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Fives &#x2684;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Fives</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Sixes &#x2685;</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Count and Add<br>Only Sixes</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                <div>
+                    <div>Total Score</div>
+                </div>
+                </th>
+                <th class="how-to-score"></th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>Bonus</div>
+                        <div class="alt">If total score is 63 or over.</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Score 35</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>Total</div>
+                        <div class="alt">Of Upper Section</div>
+                    </div>
+                </th>
+                <th class="how-to-score"></th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr class="head">
+                <th colspan="5">Lower Section</th>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>3 of a kind</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Total of all dice </th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th> 
+                    <div> 
+                        <div>4 of a kind </div>
+                    </div>
+                </th>
+                <th class="how-to-score">Total of all dice</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Full House </div>
+                    </div>
+                </th>
+                <th class="how-to-score">Score 25</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Sm. Straight </div>
+                        <div class="alt">Sequence of four</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Score 30</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Lg. Straight </div>
+                        <div class="alt">Sequence of five</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Score 40</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>YAHTZEE </div>
+                        <div class="alt">Five of a kind</div>
+                    </div>
+                </th>
+                <th class="how-to-score">Score 50</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th>
+                    <div> 
+                        <div>Chance </div>
+                    </div>
+                </th>
+                <th class="how-to-score">Total of all dice</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr> 
+                <th rowspan="2">
+                    <div> 
+                        <div>YAHTZEE Bonus</div>
+                    </div>
+                </th>
+                <th class="how-to-score">&#x2714; for<br>each bonus</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th class="how-to-score">Score 100<br>per &#x2714;</th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>Total</div>
+                        <div class="alt">Of Lower Section</div>
+                    </div>
+                </th>
+                <th class="how-to-score"></th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>Total</div>
+                        <div class="alt">Of Upper Section</div>
+                    </div>
+                </th>
+                <th class="how-to-score"></th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <th> 
+                    <div>
+                        <div>Grand Total</div>
+                    </div>
+                </th>
+                <th class="how-to-score"></th>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">        
+</script>
+
+<script>
+
+function numberRolled() {
+    var randomNumber = Math.floor(Math.random() * 6) + 1;
+    return randomNumber;
+}
+
+let count = 0;
+$('#roll-button').click(function() {
+    // reset dice after rolling 3 times
+    if (count > 2) {
+        $('.dice').removeClass('selected');
+        $('.dice').addClass('not-selected');
+        $('.dice').text(null);
+        count = 0;
+        return;
+    }
+    // check if dice are not-selected and roll
+    $('.dice').each(function(i, obj) {
+        if ($(this).hasClass('not-selected')) {
+            $(this).text(numberRolled());
+        }
+    });
+    count++;
+    yahtzee();
+});
+
+// add fireworks if yahtzee
+function yahtzee(diceValues) {
+    var diceValues = ($('.dice').text());
+    diceValues = diceValues.split('');
+
+    for (var i = 0; i < diceValues.length - 1; i++) {
+        if (diceValues[i] !== diceValues[i + 1]) {
+            return;
+        }
+    }    
+    $('#fireworks').addClass('pyro');
+    $('body').addClass('black');
+    $('input').addClass('black');
+    $('#roll-button').hide();
+    $('#yahtzee').show();
+
+    setTimeout(function() {
+        $('#fireworks').removeClass('pyro');
+        $('body').removeClass('black');
+        $('input').removeClass('black');
+        $('#roll-button').show();
+        $('#yahtzee').hide();        
+    }, 3000);
+}
+
+// toggle dice selection and color
+$('.dice').click(function() {
+    $(this).toggleClass('selected not-selected');    
+});
+
+</script>
+
+</body>
+</html>
