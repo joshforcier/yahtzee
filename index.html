@@ -17,7 +17,7 @@
 
 <h1 class='text-center'>YAHTZEE!</h1>
 
-<div class="container">
+<div class="container showHide">
     <div class="row text-center">        
         <div class="col"><div class="dice not-selected"></div></div>
         <div class="col"><div class="dice not-selected"></div></div>
@@ -27,7 +27,7 @@
     </div>
 </div>
 
-<div class="text-center"> 
+<div class="text-center showHide"> 
     <button class="btn btn-lg btn-primary" id="roll-button">Roll Dice</button>
 </div>
 
@@ -36,8 +36,7 @@
     <ul class="text-center container">
         <li class='btn btn-secondary'><a href="#tabs-1">Player 1</a></li>
         <li class='btn btn-secondary'><a href="#tabs-2">Player 2</a></li>
-<!--         <li class='btn btn-secondary'><a href="#tabs-3">Player 3</a></li>
-        <li class='btn btn-secondary'><a href="#tabs-4">Player 4</a></li> -->
+        <li class='btn btn-secondary showDice'><a>Show Dice</a></li>
     </ul>
 
     <div class="container" id="tabs-1">
@@ -58,9 +57,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Aces</th>
-                    <td class="width-15"><input class="add1"></td>
-                    <td class="width-15"><input class="add2"></td>
-                    <td class="width-15"><input class="add3"></td>
+                    <td class="width-15"><input class="add-top1"></td>
+                    <td class="width-15"><input class="add-top2"></td>
+                    <td class="width-15"><input class="add-top3"></td>
                 </tr>
                 <tr> 
                     <th> 
@@ -69,9 +68,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Twoes</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-top1"></td>
+                    <td><input class="add-top2"></td>
+                    <td><input class="add-top3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -80,9 +79,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Threes</th>
-                    <td class="add"><input class="add1"></td>
-                    <td class="add"><input class="add2"></td>
-                    <td class="add"><input class="add3"></td>
+                    <td><input class="add-top1"></td>
+                    <td><input class="add-top2"></td>
+                    <td><input class="add-top3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -91,9 +90,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Fours</th>
-                    <td class="add"><input class="add1"></td>
-                    <td class="add"><input class="add2"></td>
-                    <td class="add"><input class="add3"></td>
+                    <td><input class="add-top1"></td>
+                    <td><input class="add-top2"></td>
+                    <td><input class="add-top3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -102,9 +101,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Fives</th>
-                    <td class="add"><input class="add1"></td>
-                    <td class="add"><input class="add2"></td>
-                    <td class="add"><input class="add3"></td>
+                    <td><input class="add-top1"></td>
+                    <td><input class="add-top2"></td>
+                    <td><input class="add-top3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -113,9 +112,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Sixes</th>
-                    <td class="add"><input class="add1"></td>
-                    <td class="add"><input class="add2"></td>
-                    <td class="add"><input class="add3"></td>
+                    <td><input class="add-top1"></td>
+                    <td><input class="add-top2"></td>
+                    <td><input class="add-top3"></td>
                 </tr>
                 <tr>
                     <th> 
@@ -165,9 +164,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice </th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th> 
@@ -176,9 +175,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -187,9 +186,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 25</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -199,9 +198,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 30</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -211,9 +210,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 40</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -223,9 +222,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 50</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -234,9 +233,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice</th>
-                    <td><input class="add1"></td>
-                    <td><input class="add2"></td>
-                    <td><input class="add3"></td>
+                    <td><input class="add-lower1"></td>
+                    <td><input class="add-lower2"></td>
+                    <td><input class="add-lower3"></td>
                 </tr>
                 <tr> 
                     <th rowspan="2">
@@ -245,25 +244,25 @@
                         </div>
                     </th>
                     <th class="how-to-score">&#x2714; for<br>each bonus</th>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally1">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally2">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally3">YAHTZEE</button></td>
                 </tr>
                 <tr>
                     <th class="how-to-score">Score 100<br>per &#x2714;</th>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>  
+                        <div>
+                            <ol class="count1">&nbsp;</ol>  
                         </div>
                     </td>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>  
+                        <div>
+                            <ol class="count2">&nbsp;</ol>  
                         </div>
                     </td>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>
+                        <div>
+                            <ol class="count3">&nbsp;</ol>
                         </div>
                     </td>
                 </tr>
@@ -323,9 +322,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Aces</th>
-                    <td class="width-15"><input class="add4"></td>
-                    <td class="width-15"><input class="add5"></td>
-                    <td class="width-15"><input class="add6"></td>
+                    <td class="width-15"><input class="add-top4"></td>
+                    <td class="width-15"><input class="add-top5"></td>
+                    <td class="width-15"><input class="add-top6"></td>
                 </tr>
                 <tr> 
                     <th> 
@@ -334,9 +333,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Twoes</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-top4"></td>
+                    <td><input class="add-top5"></td>
+                    <td><input class="add-top6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -345,9 +344,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Threes</th>
-                    <td class="add"><input class="add4"></td>
-                    <td class="add"><input class="add5"></td>
-                    <td class="add"><input class="add6"></td>
+                    <td><input class="add-top4"></td>
+                    <td><input class="add-top5"></td>
+                    <td><input class="add-top6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -356,9 +355,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Fours</th>
-                    <td class="add"><input class="add4"></td>
-                    <td class="add"><input class="add5"></td>
-                    <td class="add"><input class="add6"></td>
+                    <td><input class="add-top4"></td>
+                    <td><input class="add-top5"></td>
+                    <td><input class="add-top6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -367,9 +366,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Fives</th>
-                    <td class="add"><input class="add4"></td>
-                    <td class="add"><input class="add5"></td>
-                    <td class="add"><input class="add6"></td>
+                    <td><input class="add-top4"></td>
+                    <td><input class="add-top5"></td>
+                    <td><input class="add-top6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -378,9 +377,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Count and Add<br>Only Sixes</th>
-                    <td class="add"><input class="add4"></td>
-                    <td class="add"><input class="add5"></td>
-                    <td class="add"><input class="add6"></td>
+                    <td><input class="add-top4"></td>
+                    <td><input class="add-top5"></td>
+                    <td><input class="add-top6"></td>
                 </tr>
                 <tr>
                     <th> 
@@ -430,9 +429,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice </th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th> 
@@ -441,9 +440,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -451,10 +450,10 @@
                             <div>Full House </div>
                         </div>
                     </th>
-                    <th class="how-to-score">Score 55</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <th class="how-to-score">Score 25</th>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -463,10 +462,10 @@
                             <div class="alt">Sequence of four</div>
                         </div>
                     </th>
-                    <th class="how-to-score">Score 60</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <th class="how-to-score">Score 30</th>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -476,9 +475,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 40</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -488,9 +487,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Score 50</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th>
@@ -499,9 +498,9 @@
                         </div>
                     </th>
                     <th class="how-to-score">Total of all dice</th>
-                    <td><input class="add4"></td>
-                    <td><input class="add5"></td>
-                    <td><input class="add6"></td>
+                    <td><input class="add-lower4"></td>
+                    <td><input class="add-lower5"></td>
+                    <td><input class="add-lower6"></td>
                 </tr>
                 <tr> 
                     <th rowspan="2">
@@ -510,25 +509,25 @@
                         </div>
                     </th>
                     <th class="how-to-score">&#x2714; for<br>each bonus</th>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
-                    <td><button class="btn btn-primary" id="tally">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally4">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally5">YAHTZEE</button></td>
+                    <td><button class="btn btn-primary tally" id="tally6">YAHTZEE</button></td>
                 </tr>
                 <tr>
                     <th class="how-to-score">Score 400<br>per &#x2714;</th>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>  
+                        <div>
+                            <ol class="count4">&nbsp;</ol>  
                         </div>
                     </td>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>  
+                        <div>
+                            <ol class="count5">&nbsp;</ol>  
                         </div>
                     </td>
                     <td>
-                        <div class="container">
-                            <ol id="count">&nbsp;</ol>
+                        <div>
+                            <ol class="count6">&nbsp;</ol>
                         </div>
                     </td>
                 </tr>
@@ -580,10 +579,10 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
 <script>
 
-function numberRolled() {
+function numberRolled() 
+{
     var randomNumber = Math.floor(Math.random() * 6) + 1;
     return randomNumber;
 }
@@ -594,7 +593,7 @@ $('#roll-button').click(function() {
     if (count > 2) {
         $('.dice').removeClass('selected');
         $('.dice').addClass('not-selected');
-        $('.dice').text(null);
+        $('.dice').text('');
         count = 0;
         return;
     }
@@ -609,7 +608,8 @@ $('#roll-button').click(function() {
 });
 
 // add fireworks if yahtzee
-function yahtzee(diceValues) {
+function yahtzee(diceValues) 
+{
     var diceValues = ($('.dice').text());
     diceValues = diceValues.split('');
 
@@ -629,51 +629,83 @@ function yahtzee(diceValues) {
         $('body').removeClass('black');
         $('input').removeClass('black');
         $('#roll-button').show();
-        $('#yahtzee').hide();        
+        $('#yahtzee').hide();
     }, 3000);
 }
 
 // toggle dice selection and color
 $('.dice').click(function() {
-    $(this).toggleClass('selected not-selected');    
+    $(this).toggleClass('selected not-selected');
 });
 
 // yahtzee tally marks
 $(function() {
-    $('#tally').on('click', function() {
-        $('#count').append('<li></li>');
+    $('.tally').on('click', function() {
+        let findId = this.id;
+        let idIndex = findId.slice(-1);
+        let count = '.count' + idIndex;
+        $(count).append('<li></li>');
     });
 });
 
-$(document).on("change", '.add1', function() { 
-    calcSum('.add1', '.score-top1', '.score-bonus1', '.score-top-total1'); 
-});
-$(document).on("change", '.add2', function() { 
-    calcSum('.add2', '.score-top2', '.score-bonus2', '.score-top-total2'); 
+// get changed inputs column number, add to class names, calculate sums
+$('input').change(function() {
+    let findClass = this.className;
+    let classIndex = findClass.slice(-1);
+    let classes = ['.add-top', '.add-lower', '.score-top', '.score-bonus', '.count', '.score-top-total', '.score-lower-total', '.score-total'];
+
+    for (let i = 0; i < classes.length; i++){
+        classes[i] = classes[i] + classIndex;
+    }
+
+    let [topClass, lowerClass, scoreTop, scoreBonus, yahtzeeBonus, scoreTopTotal, scoreLower, scoreTotal] = classes;
+    
+    calcSum(topClass, lowerClass, scoreTop, scoreBonus, yahtzeeBonus, scoreTopTotal, scoreLower, scoreTotal);
 });
 
-function calcSum(addClass, scoreTop, scoreBonus, scoreTopTotal)
+function calcSum(topClass, lowerClass, scoreTop, scoreBonus, yahtzeeBonus, scoreTopTotal, scoreLower, scoreTotal)
 {
-    var sum = 0;
-    $(addClass).each(function(){
-        sum += +$(this).val();
+    var sumTop = 0;
+    $(topClass).each(function() {
+        sumTop += +$(this).val();
     });
 
-    $(scoreTop).val(sum);
+    var sumLower = 0;
+    $(lowerClass).each(function() {
+        sumLower += +$(this).val();
+    });
 
+    $(scoreTop).val(sumTop);
     if ($(scoreTop).val() > 62) {
         $(scoreBonus).val(35);
     }
 
     let top = $(scoreTop).val();
-    let bonus = $(scoreBonus).val();
-    let topTotal = parseInt(top)+ parseInt(bonus);
+    let lower = $(scoreLower).val();
+    let bonus35 = $(scoreBonus).val();
+    let bonus100 = $(yahtzeeBonus).children('li').size();
+    bonus100 = bonus100 * 100;
+
+    let topTotal = parseInt(top) + parseInt(bonus35);
+    let lowerTotal = sumLower + bonus100;
+    let total = parseInt(topTotal) + parseInt(lowerTotal);
+    $(scoreLower).val(lowerTotal);
     $(scoreTopTotal).val(topTotal);
+    $(scoreTotal).val(total);
 }
 
-$( function() {
-    $( "#tabs" ).tabs();
-} );
+$(function() {
+    $("#tabs").tabs();
+});
+
+$('.showDice').click(function() {
+    $('.showHide').toggle();
+    if ($('.showDice').text() === 'Show Dice') {
+        $('.showDice').text('Hide Dice');
+    } else {
+        $('.showDice').text('Show Dice');
+    }
+});
 
 </script>
 
