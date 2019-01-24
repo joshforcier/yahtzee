@@ -273,3 +273,23 @@ ol li:nth-child(5n) {
 .showHide {
     display: none;
 }
+
+@media (min-width: 600px) {
+    .container{max-width: 600px;}
+}
+@media (min-width: 768px) {
+    .container{max-width: 900px;}
+}
+@media (min-width: 992px) {
+    .container{max-width: 900px;}
+}
+@media (min-width: 1024px) {
+    .container{width: 970px;}
+}
+@media (min-width: 1200px){
+    .container{;max-width: 1170px;}
+}
+
+h1 {
+    margin-top: 25px;
+}
