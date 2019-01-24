@@ -1,3 +1,7 @@
+div {
+    font-size: 1.5rem;
+}
+
 .dice {
     height: 75px;
     width: 75px;
@@ -27,12 +31,8 @@ table, th, td, tbody {
 }
 
 .how-to-score, .alt {
-    font-size: 8px;
+    font-size: 0.75rem;
     font-style: normal;
-}
-
-input {
-    width: 50px;
 }
 
 .pyro > .before, .pyro > .after {
@@ -296,7 +296,7 @@ h1 {
 
 table td input {
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center; 
 }
