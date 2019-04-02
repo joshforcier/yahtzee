@@ -400,7 +400,7 @@ $(function() {
 });
 
 // get changed inputs column number, add to class names, calculate sums
-$('input').change(function {
+$('input').change(function() {
     let findClass = this.className;
     let classIndex = findClass.slice(-1);
     let classes = ['.add-top', '.add-lower', '.score-top', '.score-bonus', '.count', '.score-top-total', '.score-lower-total', '.score-total'];
